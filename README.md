@@ -3,7 +3,7 @@
 HTML2Minify is a plugin for MODX Revo 2.2.xxx that compresses the HTML output to reduce file size and improve performance. 
 It's forked from a [script by DVS](http://www.intert3chmedia.net/2011/12/minify-html-javascript-css-without.html).
 
-[Download HTML Minify](https://github.com/cferdinandi/html-minify/archive/master.zip)
+[Download HTML Minify](https://github.com/play2web/HTML2Minify/archive/master.zip)
 
 
 
