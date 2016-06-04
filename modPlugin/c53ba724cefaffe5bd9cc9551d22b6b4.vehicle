@@ -1,0 +1,54 @@
+<?php return array (
+  'preserve_keys' => false,
+  'update_object' => true,
+  'unique_key' => 'name',
+  'related_objects' => 
+  array (
+    'PluginEvents' => 
+    array (
+      '3565b2ef9ad093f8c3d1ef306708a557' => 
+      array (
+        'preserve_keys' => true,
+        'update_object' => false,
+        'unique_key' => 
+        array (
+          0 => 'pluginid',
+          1 => 'event',
+        ),
+        'class' => 'modPluginEvent',
+        'object' => '{"pluginid":1,"event":"OnWebPagePrerender","priority":0,"propertyset":0}',
+        'guid' => '51d00f4226319cb617a965df529e403f',
+        'native_key' => 
+        array (
+          0 => 1,
+          1 => 'OnWebPagePrerender',
+        ),
+        'signature' => '23f754ba8b825351b380cb37747505b7',
+      ),
+    ),
+  ),
+  'related_object_attributes' => 
+  array (
+    'PluginEvents' => 
+    array (
+      'preserve_keys' => true,
+      'update_object' => false,
+      'unique_key' => 
+      array (
+        0 => 'pluginid',
+        1 => 'event',
+      ),
+    ),
+  ),
+  'namespace' => 'html2minify',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '2f29a7edf69f978a81224261062efbb5',
+  'package' => 'modx',
+  'class' => 'modPlugin',
+  'signature' => 'c53ba724cefaffe5bd9cc9551d22b6b4',
+  'native_key' => 1,
+  'object' => '{"id":1,"source":1,"property_preprocess":0,"name":"HTML2Minify","description":"","editor_type":0,"category":0,"cache_type":0,"plugincode":"\\/**************************************\\/\\n\\/** HTML2Minify plugin for MODX Revo\\n*\\n* @version 1.0\\n* @author play2web (info@play2web.com)\\n* @date 01.06.2016\\n*\\n* @category plugin\\n* @internal @event OnWebPagePrerender\\n* @internal @properties &Minify=ID TV;integer;1\\n* @internal @modx_category HTML-code\\n*\\n*\\n*\\n* INSTALL\\n*        1) Assign Minify TV to your template\\n*        2) Minify TV values\\n*              - Yes==1||No==0 \\n*              - Default value: 1\\n*        3) Enjoy:)\\n*\\/\\n\\/*************************************\\/\\n\\nif($modx->event->name==\'OnWebPagePrerender\'){\\n  $id = $modx->resource->get(\'id\');\\n  $page = $modx->getObject(\'modResource\', $id);\\n  $tv = $page->getTVValue(\'Minify\');\\n  if($tv == 1){\\n\\t$html = &$modx->resource->_output;\\n\\t$html = preg_replace(\'|\\\\s+|\', \' \', $html);\\n  }\\n}","locked":0,"properties":"a:0:{}","disabled":0,"moduleguid":"","static":0,"static_file":"","content":"\\/**************************************\\/\\n\\/** HTML2Minify plugin for MODX Revo\\n*\\n* @version 1.0\\n* @author play2web (info@play2web.com)\\n* @date 01.06.2016\\n*\\n* @category plugin\\n* @internal @event OnWebPagePrerender\\n* @internal @properties &Minify=ID TV;integer;1\\n* @internal @modx_category HTML-code\\n*\\n*\\n*\\n* INSTALL\\n*        1) Assign Minify TV to your template\\n*        2) Minify TV values\\n*              - Yes==1||No==0 \\n*              - Default value: 1\\n*        3) Enjoy:)\\n*\\/\\n\\/*************************************\\/\\n\\nif($modx->event->name==\'OnWebPagePrerender\'){\\n  $id = $modx->resource->get(\'id\');\\n  $page = $modx->getObject(\'modResource\', $id);\\n  $tv = $page->getTVValue(\'Minify\');\\n  if($tv == 1){\\n\\t$html = &$modx->resource->_output;\\n\\t$html = preg_replace(\'|\\\\s+|\', \' \', $html);\\n  }\\n}"}',
+);
